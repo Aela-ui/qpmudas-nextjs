@@ -87,10 +87,6 @@ const MenuLink = styled.a`
   font-family: 'Comfortaa', cursive;
   padding: 20px 30px;
   letter-spacing: 1px;
-
-  @media (max-width: 965px) {
-    
-  }
 `;
 
 const LinkWrapper = styled.div`
@@ -108,7 +104,9 @@ const Hamburger = styled.button`
   flex-direction: column;
   display: flex;
   cursor: pointer;
-  background-color: #C02A27;
+  border:none!important;
+    background-color: #C02A27!important;
+  
   margin-right: 40px;
   margin-top: ${props => props.isOpen ? '21px' : '0'};
 

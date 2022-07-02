@@ -72,6 +72,7 @@ const Hero = () => {
                             width={90} 
                             objectFit='cover'
                             
+                            
                         />
                     </div>
 
