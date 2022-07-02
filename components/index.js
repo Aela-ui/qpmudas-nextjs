@@ -1,5 +1,4 @@
-import Text from "./Text";
 import Navbar from "./Navbar";
-import Front from "./Front";
+import Front from "./Hero";
 
-export{Text, Navbar, Front}
+export{Navbar, Front}

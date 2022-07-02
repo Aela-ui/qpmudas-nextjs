@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <Nav>
       <Container isOpen={isOpen}>
-        {!isOpen && <Image src="/images/logobranco.svg" alt="Logo Branco" height={60} width={60}/>}
+        {!isOpen && <Image src="/images/logobranco.svg" alt="Logo da empresa" height={60} width={60}/>}
         <Hamburger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} aria-pressed={isOpen}> 
           <span></span>
           <span></span>
@@ -15,7 +15,7 @@ const Navbar = () => {
         </Hamburger>
         <Menu isOpen={isOpen}>
           <LinkWrapper>
-            <MenuLink href="#capa">início</MenuLink>
+            <MenuLink href="#hero">início</MenuLink>
             {!isOpen && <Line/>}
             <MenuLink href="#">colaborador</MenuLink>
             {!isOpen && <Line/>}
@@ -36,7 +36,7 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Nav = styled.div`
+const Nav = styled.nav`
   background: #C02A27;
   width: 100vw;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -97,7 +97,6 @@ const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 
 
   @media (max-width: 965px) {
@@ -105,7 +104,7 @@ const LinkWrapper = styled.div`
   }
 `;
 
-const Hamburger = styled.div`
+const Hamburger = styled.button`
   flex-direction: column;
   display: flex;
   cursor: pointer;

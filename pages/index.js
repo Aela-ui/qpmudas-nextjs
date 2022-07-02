@@ -1,4 +1,4 @@
-import {Text, Navbar, Front} from '../components';
+import {Navbar, Front} from '../components';
 
 export default function Home() {
   return (

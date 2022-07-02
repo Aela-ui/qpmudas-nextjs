@@ -10,7 +10,7 @@ const images = [
     '/images/banner5.webp'
 ];
 
-const Capa = () => {
+const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -43,36 +43,60 @@ const Capa = () => {
     }
     
     return(
-        <div>
-            <Menu>
-                <Container id = "capa">
-                    <Image src={images[currentIndex]} alt="vetor" width={250} height={250}/>
-                    <Image src="/images/logobranco.svg" alt="logo branco" width={30} height={30}/>
+        <header>            
+                <Container id = "hero">
+                    <div style={{
+                        width: '100%',
+                        maxWidth: '55%',
+                        height: '55vh',
+                        maxHeight:'327px',
+                        position: 'relative',
+                        borderRadius: '8%',
+                        overflow: 'hidden'}}>
+                            
+                            <Image
+                                src={images[currentIndex]} 
+                                alt="vetor" 
+                                layout='fill' 
+                                objectFit='cover'
+                            />
+                    </div>
+
+                    <div style={{
+                        overflow: 'hidden',}}>
+
+                        <Image 
+                            src="/images/logobranco.svg" 
+                            alt="logo branco"
+                            height={90}
+                            width={90} 
+                            objectFit='cover'
+                            
+                        />
+                    </div>
+
                     <Image src="/images/arrow.svg" onClick = {handleClick} alt="arrow"  width={30} height={30}/>
                     <Image src="/images/arrowReverse.svg" onClick = {handleClickReverse} alt="arrow reverse"  width={30} height={30}/>
-                </Container>
-            </Menu>
-        </div>
+                </Container>          
+        </header>
     )
 }
 
-export default Capa;
+export default Hero;
 
-const Menu = styled.div `
-`;
 
 const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(0rem);
     width: 100%;
     height: 20.5rem;
-    top: 182.125rem;
 
     background: #C02A27;
 
     @media (max-width: 965px) {
     flex-direction: column;
     }
+
 `; 
+
