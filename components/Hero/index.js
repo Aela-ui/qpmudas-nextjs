@@ -46,8 +46,8 @@ const Hero = () => {
           <Image
             src="/images/arrowReverse.svg"
             alt="arrow reverse"
-            width={30}
-            height={30}
+            width={45}
+            height={45}
           />
         </ArrowButton>
 
@@ -56,7 +56,7 @@ const Hero = () => {
         </ImageWrapper>
 
         <ArrowButton onClick={handleClick}>
-          <Image src="/images/arrow.svg" alt="arrow" width={30} height={30} />
+          <Image src="/images/arrow.svg" alt="arrow" width={45} height={45} />
         </ArrowButton>
       </Container>
     </header>
@@ -67,14 +67,15 @@ export default Hero;
 
 const ImageWrapper = styled.div`
   position: relative;
-  width: 65%;
-  max-width: 640px;
+  width: 100%;
+  max-width: 500px;
   height: 100%;
-  border-radius: 8%;
+  border-radius: 25px;
+  overflow:hidden;
 `;
 
 const ArrowButton = styled.button`
-  margin: 10px;
+  margin: 15px;
   background-color: transparent;
   border: none;
 `;
@@ -84,7 +85,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20.5rem;
+  height: 15rem;
 
   background: #c02a27;
 `;
