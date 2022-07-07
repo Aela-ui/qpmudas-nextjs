@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image';
-import { useState } from 'react'
+import { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
