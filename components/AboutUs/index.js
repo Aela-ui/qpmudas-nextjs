@@ -7,7 +7,7 @@ function AboutUs() {
     return (
         <Box>
             <AboutUsTitle>
-                <QualyH>Quem Somos</QualyH>
+                 <QualyH>Quem Somos</QualyH>
             </AboutUsTitle>
             <RedLine />
             <AboutUsText>
@@ -19,38 +19,48 @@ function AboutUs() {
 
 export default AboutUs;
 
+
 const Box = styled.div`
+    box-sizing: border-box;
     transform: translateY(-12px);
-    margin-left: 150px;
-    max-width: 800px;
-    align-items: center;
-    text-align: justify;
-    justify-content: center;
     background: #FFD6A9;
     box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25), 0rem 1.5rem 2.375rem rgba(0, 0, 0, 0.14), 0rem 0.563rem 2.875rem rgba(0, 0, 0, 0.12);
     border-radius: 0.188rem;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 60px;  
+    width: 90%;
+    margin: auto;
+    padding: 90px;
+    max-width:1300px;
 `;
 
 const AboutUsTitle = styled.div`
-    padding-left:230px;
     color: #000000;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    margin-left: 35%;
+
+    @media (max-width: 1120px) {
+       margin:auto;
+    } 
 `;
 
 const AboutUsText = styled.div`
     color: #2D2828;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 6%;
 `;
 
 const RedLine = styled.span`
     position: absolute;
+    margin-top:3%;
     left: 46.66%;
     right: 46.66%;
     border: 0.130rem solid #C02A27;
     border-radius: 0.125rem;
 
-    @media (max-width: 965px) {
+    @media (max-width: 1120px) {
         display: none;
     } 
 `; 

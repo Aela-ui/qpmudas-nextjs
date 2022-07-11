@@ -72,12 +72,14 @@ const ImageWrapper = styled.div`
   height: 100%;
   border-radius: 25px;
   overflow:hidden;
+
 `;
 
 const ArrowButton = styled.button`
   margin: 15px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 `;
 
 const Container = styled.div`
