@@ -38,7 +38,7 @@ export default Navbar;
 
 const Nav = styled.nav`
   background: #C02A27;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 10;
