@@ -52,7 +52,7 @@ const Hero = () => {
         </ArrowButton>
 
         <ImageWrapper>
-          <Image src={images[currentIndex]} alt="vetor" layout="fill" />
+          <Image src={images[currentIndex]} alt="Imagens relacionadas a mudas de morango" layout="fill" />
         </ImageWrapper>
 
         <ArrowButton onClick={handleClick}>
@@ -72,7 +72,6 @@ const ImageWrapper = styled.div`
   height: 100%;
   border-radius: 25px;
   overflow:hidden;
-
 `;
 
 const ArrowButton = styled.button`

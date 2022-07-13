@@ -30,18 +30,17 @@ const Box = styled.div`
     margin: auto;
     padding: 90px;
     max-width:1300px;
+
+    @media (max-width: 975px) {
+       padding:30px
+    } 
 `;
 
 const AboutUsTitle = styled.div`
     color: #000000;
     align-items: center;
-    text-align: justify;
+    text-align: center;
     justify-content: center;
-    margin-left: 35%;
-
-    @media (max-width: 1120px) {
-       margin:auto;
-    } 
 `;
 
 const AboutUsText = styled.div`
@@ -60,7 +59,7 @@ const RedLine = styled.span`
     border: 0.130rem solid #C02A27;
     border-radius: 0.125rem;
 
-    @media (max-width: 1120px) {
+    @media (max-width: 775px) {
         display: none;
     } 
 `; 

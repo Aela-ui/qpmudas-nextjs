@@ -86,6 +86,18 @@ const MenuLink = styled.a`
   font-family: 'Comfortaa', cursive;
   padding: 20px 30px;
   letter-spacing: 1px;
+  overflow: hidden;
+  background: linear-gradient(to right, #4FB340, #4FB340 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+
+  &:hover {
+  background-position: 0 100%;
+  }
 `;
 
 const LinkWrapper = styled.div`
