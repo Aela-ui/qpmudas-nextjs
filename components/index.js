@@ -1,4 +1,6 @@
 import Navbar from "./Navbar";
-import Front from "./Hero";
+import Hero from "./Hero";
+import AboutUs from "./AboutUs";
+import Production from "./Production.js";
 
-export{Navbar, Front}
+export{Navbar, Hero, AboutUs, Production}

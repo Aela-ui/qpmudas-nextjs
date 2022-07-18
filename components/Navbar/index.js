@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image';
-import { useState } from 'react'
+import { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +36,9 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Nav = styled.nav`
+const Nav = styled.div`
   background: #C02A27;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 10;
@@ -50,7 +50,6 @@ const Container = styled.div`
   align-items: ${props => props.isOpen ? 'flex-start' : 'center'};
   justify-items: center;
   width: 100%;
-
 
   @media (max-width: 965px) {
     justify-content: space-between;
@@ -87,13 +86,24 @@ const MenuLink = styled.a`
   font-family: 'Comfortaa', cursive;
   padding: 20px 30px;
   letter-spacing: 1px;
+  overflow: hidden;
+  background: linear-gradient(to right, #4FB340, #4FB340 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+
+  &:hover {
+  background-position: 0 100%;
+  }
 `;
 
 const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 
   @media (max-width: 965px) {
     flex-direction: column;
@@ -105,10 +115,10 @@ const Hamburger = styled.button`
   display: flex;
   cursor: pointer;
   border:none!important;
-    background-color: #C02A27!important;
-  
+  background-color: #C02A27!important;
   margin-right: 40px;
   margin-top: ${props => props.isOpen ? '21px' : '0'};
+  transition: 0.3s ease-in;
 
   span{
     height: 2px ;

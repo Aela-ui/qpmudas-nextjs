@@ -1,11 +1,12 @@
-import {Navbar, Front} from '../components';
+import {Navbar, Hero, AboutUs, Production} from '../components';
 
 export default function Home() {
   return (
     <>
       <Navbar/>
-      <Front/>
+      <Hero/>
+      <AboutUs/>
+      <Production/>
     </>
   )
 }
-
