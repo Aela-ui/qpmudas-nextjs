@@ -1,0 +1,3 @@
+export const albionText = "É uma cultivar Californiana de dia neutro e bem adaptada ao cultivo no Brasil. A planta é de porte mediano e arquitetura aberta, o que facilita as práticas de manejo e a colheita. A Albion possui alta produtividade e frutos de excelente qualidade, pelo seu tamanho, coloração, sabor e firmeza.";
+
+export const estivaText = "É uma cultivar nacional, de dia neutro e bem adaptada ao cultivo, incluindo em dias longos e quentes de verão. A planta é vigorosa, de arquitetura aberta e frutos com pedúnculo longo, o que facilita a colheita. Possui alta produtividade e prolongado período de colheita de frutos firmes, de bom sabor e boa coloração e conservação pós-colheita.";

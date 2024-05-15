@@ -71,7 +71,7 @@ const ImageWrapper = styled.div`
   max-width: 500px;
   height: 100%;
   border-radius: 25px;
-  overflow:hidden;
+  overflow:hidden;  
 `;
 
 const ArrowButton = styled.button`
@@ -82,6 +82,7 @@ const ArrowButton = styled.button`
 `;
 
 const Container = styled.div`
+
   display: flex;
   justify-content: center;
   align-items: center;

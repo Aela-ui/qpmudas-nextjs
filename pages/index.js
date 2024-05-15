@@ -1,4 +1,4 @@
-import {Navbar, Hero, AboutUs, Production} from '../components';
+import {Navbar, Hero, AboutUs, Production, Cultivate} from '../components';
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero/>
       <AboutUs/>
       <Production/>
+      <Cultivate/>
     </>
   )
 }
