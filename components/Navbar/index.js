@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +19,9 @@ const Navbar = () => {
             {!isOpen && <Line/>}
             <MenuLink href="#">colaborador</MenuLink>
             {!isOpen && <Line/>}
-            <MenuLink href="#producao" onClick={() => setIsOpen(false)}>produção</MenuLink>
+            <MenuLink href="#production" onClick={() => setIsOpen(false)}>produção</MenuLink>
             {!isOpen && <Line/>}
-            <MenuLink href="#cultivar">cultivares</MenuLink>
+            <MenuLink href="#cultivate">cultivares</MenuLink>
             {!isOpen && <Line/>}
             <MenuLink href="#contato">contato</MenuLink>
             {!isOpen && <Line/>}
@@ -36,12 +36,15 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Nav = styled.div`
+const Nav = styled.nav`
   background: #C02A27;
   width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  position: relative;
+  position: sticky;
+  overflow: hidden;
+  top:0;
   z-index: 10;
+  padding-top:0px;
 `;
 
 const Container = styled.div`
@@ -94,7 +97,8 @@ const MenuLink = styled.a`
   background-size: 200% 100%;
   background-position: 100%;
   transition: background-position 275ms ease;
-
+  text-decoration: none;
+  
   &:hover {
   background-position: 0 100%;
   }
@@ -119,13 +123,14 @@ const Hamburger = styled.button`
   margin-right: 40px;
   margin-top: ${props => props.isOpen ? '21px' : '0'};
   transition: 0.3s ease-in;
-
+  
   span{
     height: 2px ;
     width: 25px;
     background-color: #4FB340;
     margin-bottom: 4px;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   @media(min-width: 965px) {
